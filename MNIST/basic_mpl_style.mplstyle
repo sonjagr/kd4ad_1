@@ -1,0 +1,44 @@
+#CB_color_cycle = ['377eb8', 'ff7f00', '4daf4a', 'f781bf', 'a65628', '984ea3','999999', 'e41a1c', 'dede00']
+#CB_color_cycle = ['3f90da', 'ffa90e', 'bd1f01', '94a4a2', '832db6', 'a96b59', 'e76300', 'b9ac70', '717581', '92dadd']
+axes.prop_cycle: cycler(color=['377eb8', 'ff7f00', '4daf4a', 'f781bf', 'a65628', '984ea3','999999', 'e41a1c', 'dede00'])
+
+#font.sans-serif: ['Helvetica', 'Arial']
+#font.family: sans-serif
+mathtext.fontset: custom
+mathtext.default: regular
+figure.figsize: 20.0,6.0
+font.size: 20
+axes.labelsize: medium
+axes.unicode_minus: False
+xtick.labelsize: small
+ytick.labelsize: small
+legend.fontsize: small
+legend.handlelength: 1.5
+legend.borderpad: 0.5
+legend.frameon: False
+xtick.direction: in
+xtick.major.size: 12
+xtick.minor.size: 6
+xtick.major.pad: 6
+xtick.top: True
+xtick.major.top: True
+xtick.major.bottom: True
+xtick.minor.top: True
+xtick.minor.bottom: True
+xtick.minor.visible: True
+ytick.direction: in
+ytick.major.size: 12
+ytick.minor.size: 6.0
+ytick.right: True
+ytick.major.left: True
+ytick.major.right: True
+ytick.minor.left: True
+ytick.minor.right: True
+ytick.minor.visible: True
+axes.grid: True
+grid.alpha: 0.8
+grid.linestyle: :
+axes.linewidth: 2
+savefig.transparent: False
+xaxis.labellocation: right
+yaxis.labellocation: top
