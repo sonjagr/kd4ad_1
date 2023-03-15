@@ -10,7 +10,7 @@ from sklearn.metrics import roc_curve, roc_auc_score
 from keras_flops import get_flops
 from matplotlib.ticker import (MultipleLocator, AutoMinorLocator)
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+#os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 (_, _), (x_test, y_test) = tf.keras.datasets.mnist.load_data()
 

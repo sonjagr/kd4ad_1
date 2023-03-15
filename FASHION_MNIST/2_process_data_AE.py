@@ -3,7 +3,7 @@ import numpy as np
 import os
 import time
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "4"
+#os.environ["CUDA_VISIBLE_DEVICES"] = "4"
 
 (x_train, y_train), (x_test, y_test) = tf.keras.datasets.fashion_mnist.load_data()
 

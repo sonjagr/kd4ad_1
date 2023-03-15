@@ -8,9 +8,8 @@ import time
 from tqdm import tqdm
 from sklearn.metrics import roc_curve, roc_auc_score
 from keras_flops import get_flops
-from sklearn import preprocessing
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "4"
+#os.environ["CUDA_VISIBLE_DEVICES"] = "4"
 
 ## USER OPTIONS
 digit = 8

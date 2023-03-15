@@ -3,7 +3,7 @@ import numpy as np
 import os
 import time
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "4"
+#os.environ["CUDA_VISIBLE_DEVICES"] = "4"
 
 (x_train, y_train), (x_test, y_test) = tf.keras.datasets.mnist.load_data()
 
@@ -59,7 +59,7 @@ y_test_aed = np.array(y_test_aed).flatten()
 print(len(y_train), len(y_train_aed))
 print(len(y_test), len(y_test_aed))
 print('Average time: ', np.mean(teacher_times))
-#np.save('AE_outputs/teacher_normal_CVPR_%s_time' % anomalous_digit, np.mean(teacher_times))
-#np.save('AE_outputs/y_train_aed_teacher_normal_CVPR_%s' % anomalous_digit, y_train_aed)
-#np.save('AE_outputs/y_test_aed_teacher_normal_CVPR_%s' % anomalous_digit, y_test_aed)
+np.save('AE_outputs/teacher_normal_CVPR_%s_time' % anomalous_digit, np.mean(teacher_times))
+np.save('AE_outputs/y_train_aed_teacher_normal_CVPR_%s' % anomalous_digit, y_train_aed)
+np.save('AE_outputs/y_test_aed_teacher_normal_CVPR_%s' % anomalous_digit, y_test_aed)
 print('DONE')

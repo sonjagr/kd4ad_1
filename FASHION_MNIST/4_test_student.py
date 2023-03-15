@@ -8,10 +8,9 @@ import time
 from tqdm import tqdm
 from sklearn.metrics import roc_curve, roc_auc_score
 from keras_flops import get_flops
-from sklearn import preprocessing
 from matplotlib.ticker import (MultipleLocator, AutoMinorLocator)
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+#os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 (_, _), (x_test, y_test) = tf.keras.datasets.fashion_mnist.load_data()
 
@@ -59,7 +58,6 @@ student_params = np.sum([np.prod(v.get_shape()) for v in student.trainable_weigh
 size = student_params
 print('Student parameters: ', student_params)
 
-y_train_aed_for_scaler = np.load('AE_outputs/y_train_aed_teacher_normal_CVPR_%s.npy' % digit)
 y_test_aed = np.load('AE_outputs/y_test_aed_teacher_normal_CVPR_%s.npy' % digit)
 if 'log' in student_name:
     f = lambda x: np.log(x)

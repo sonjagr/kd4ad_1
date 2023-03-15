@@ -9,7 +9,7 @@ from tqdm import tqdm
 from sklearn.metrics import roc_curve, roc_auc_score
 from sklearn import preprocessing
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "3"
+#os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 
 (x_train, y_train), (x_test, y_test) = tf.keras.datasets.fashion_mnist.load_data()
 
@@ -78,11 +78,5 @@ plt.legend()
 plt.grid(zorder = 1)
 plt.title('Anomalous digit: %s' % digit)
 plt.show()
-
-ez = sorted(zip(y_test_aed[:100], x_test[:100]), reverse= True)
-sorted_imgs = [y for x,y in ez]
-for i in range(0, 5):
-    plt.imshow(sorted_imgs[i])
-    plt.show()
 
 

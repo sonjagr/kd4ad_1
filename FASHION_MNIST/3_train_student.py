@@ -1,5 +1,5 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+o#s.environ["CUDA_VISIBLE_DEVICES"] = "2"
 import tensorflow as tf
 import numpy as np
 from students import *
@@ -16,8 +16,6 @@ given_digit = args.digit
 
 given_size = 295
 given_digit = 4
-
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 (x_train, y_train_orig), (_, _) = tf.keras.datasets.fashion_mnist.load_data()
 

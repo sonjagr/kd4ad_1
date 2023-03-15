@@ -1,13 +1,13 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+#.environ["CUDA_VISIBLE_DEVICES"] = "0"
 import tensorflow as tf
 import numpy as np
 from students import *
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--size", type=int, help="size")
-parser.add_argument("--digit", type=int, help="digit")
+parser.add_argument("--size", type=int, help="size", required=False)
+parser.add_argument("--digit", type=int, help="digit", required=False)
 
 args, unknown = parser.parse_known_args()
 

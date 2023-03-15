@@ -1,11 +1,11 @@
 import tensorflow as tf
 import numpy as np
-import sys, os
+import  os
 
 from tensorflow.keras import layers
 
 ### USER OPTIONS
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+#os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 normal_digit = 7
 lr = 1e-3
 batch_size = 32
