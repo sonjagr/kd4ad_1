@@ -177,7 +177,7 @@ ax.yaxis.set_minor_locator(MultipleLocator(0.1))
 ax.tick_params(axis="both", which = 'both', direction="in",top=True, right=True, labelsize = fs-2)
 #plt.savefig('PRC_normal_%s.png' % digit)
 plt.tight_layout()
-plt.savefig('MNIST_PCR.png', dpi = 600)
+plt.savefig('MNIST_PRC.png', dpi = 600)
 plt.show()
 
 np.save('student_normal_%s_time' % digit, np.mean(student_times))
