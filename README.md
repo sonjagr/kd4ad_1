@@ -9,8 +9,8 @@ Teacher inference time/img on CPU: 32 ms
 Student free parameters:  216   
 Student inference time/img on CPU: 1.5 ms  
 
-Compression factor in free parameters: 134.34   
-Compression factor in FLOPS: 281.05  
+Compression factor in free parameters: 722  
+Compression factor in FLOPS: 300  
 
 In folders, FASHION_MNIST and MNIST, 
 you will find the teachers trained for each label and corresponding students, 

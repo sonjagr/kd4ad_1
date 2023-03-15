@@ -18,8 +18,8 @@ x_test = np.reshape(x_test, (len(x_test), 28, 28, 1))
 x_test = x_test.astype('float32') / 255.
 
 ## USER OPTIONS
-digit = 2
-student_name = '555'
+digit =8
+student_name = '216'
 ####
 
 normal_indices = np.where(y_test == digit)[0]
