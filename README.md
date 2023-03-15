@@ -17,3 +17,5 @@ you will find the teachers trained for each label and corresponding students,
 distinguished by their size measured in number of free parameters.
 
 In folders with 'student_normals', you will find incomplete analysis only using a fraction of normal digits for training student.
+
+In folder drawio_files, you find files to upload into https://app.diagrams.net/ to change architecture plots.
